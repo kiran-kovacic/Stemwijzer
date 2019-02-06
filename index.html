@@ -2,14 +2,18 @@
 <html lang="nl" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Stemwijzer</title>
   </head>
-  <body>
-    <script src="http://stemwijzer.dvc-icta.nl/data.js">
-      var scripts = new subjects[0];
-      document.getElementById("demo").innerHTML = scripts;
-    </script>
-    <h1 id="demo"></h1>
-    <button type="button" name="button">Start</button>
+  <body onload="onloadsite()">
+    <button type="button" name="button" id="back"><--</button>
+    <h2 id="title"></h2>
+    <h2 id="statement"></h2>
+    <button type="button" id="start">Start</button>
+    <button type="button" id="button_1"></button>
+    <button type="button" id="button_2"></button>
+    <button type="button" id="button_3"></button>
+    <script src="http://stemwijzer.dvc-icta.nl/data.js"></script>
+    <script type="text/javascript" src="stemwijzer.js"></script>
   </body>
 </html>
