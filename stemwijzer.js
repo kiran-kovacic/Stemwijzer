@@ -14,7 +14,7 @@ const started     = document.getElementsByClassName("start");
 var subject_index = 0;
 var big_parties = false;
 var secular_parties = false;
-var answer = []
+var answer = [];
 
 function onloadsite() {
   for (var i = 0; i < hidden.length; i++) {
@@ -88,8 +88,7 @@ function check_secular_and_size(text) {
 function pro_stmt(text) {
   answer[subject_index] = "pro";
   var text = [];
-  check_secular_and_size(text)
-  console.log(text);
+  text = check_secular_and_size(text)
   var x = subjects.length - 1;
   if (subject_index < x) {
     check_status(text)
@@ -101,7 +100,7 @@ function pro_stmt(text) {
   }
 }
 
-function ambivalent() {
+function ambivalent(text) {
   answer[subject_index] = "ambivalent";
   var text = [];
   check_secular_and_size(text)
@@ -117,11 +116,11 @@ function ambivalent() {
   }
 }
 
-function contra() {
+function contra(text) {
   answer[subject_index] = "contra";
   var text = [];
   check_secular_and_size(text)
-  var text = subjects[subject_index].parties;
+  text = check_secular_and_size(text)
   var x = subjects.length - 1;
   if (subject_index < x) {
     check_status(text)
@@ -137,6 +136,7 @@ function next_stmt() {
   answer[subject_index] = "none";
   var text = [];
   check_secular_and_size(text)
+  text = check_secular_and_size(text)
   var x = subjects.length - 1;
   if (subject_index < x) {
     check_status()

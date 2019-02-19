@@ -1,7 +1,16 @@
-.hidden {
-  display: none;
+body {
+  background-image: url(bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
 }
 
-.not_hidden {
-  display: inline;
+.mydiv {
+  border-radius: 25px;
+  width: 50%;
+  padding: 1%;
+  margin-top: 20%;
+  margin-left: 24%;
+  margin-right: 24%;
+  height: 50%;
+  background-color: white;
 }

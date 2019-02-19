@@ -2,25 +2,26 @@
 <html lang="nl" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="stemwijzer.css">
     <title>Stemwijzer</title>
   </head>
   <body onload="onloadsite()" class="w3-container">
-    <h2 id="title"></h2>
-    <h2 id="statement"></h2>
-    <button class="start" type="button" id="start">Start</button>
-    <button class="hidden" type="button" id="back"><--</button>
-    <button class="hidden" type="button" id="button_1">eens</button>
-    <button class="hidden" type="button" id="button_2">geen van bijde</button>
-    <button class="hidden" type="button" id="button_3">oneens</button><br>
-    <input class="hidden" type="checkbox" id="checkbox_1" name="" value="">
-    <span class="hidden"> Hierdoor is je antwoordt twee keer zo zwaar.</span>
-    <a class="hidden" id="next" href="#">Sla deze vraag over --></a><br>
-    <input class="start" type="checkbox" id="checkbox_2" name="" value="">
-    <span class="start"> Allen seculiere partijen</span><br>
-    <input class="start" type="checkbox" id="checkbox_3" name="" value="">
-    <span class="start"> Allen grote partijen</span>
+    <div class="mydiv">
+      <button class="hidden" type="button" id="back"><--</button>
+      <h2 id="title"></h2>
+      <h2 id="statement"></h2>
+      <button class="start" type="button" id="start">Start</button>
+      <button class="hidden" type="button" id="button_1">eens</button>
+      <button class="hidden" type="button" id="button_2">geen van bijde</button>
+      <button class="hidden" type="button" id="button_3">oneens</button><br>
+      <input class="hidden" type="checkbox" id="checkbox_1" name="" value="">
+      <span class="hidden"> Hierdoor is je antwoordt twee keer zo zwaar.</span>
+      <a class="hidden" id="next" href="#">Sla deze vraag over --></a><br>
+      <input class="start" type="checkbox" id="checkbox_2" name="" value="">
+      <span class="start"> Allen seculiere partijen</span><br>
+      <input class="start" type="checkbox" id="checkbox_3" name="" value="">
+      <span class="start"> Allen grote partijen</span>
+    </div>
     <script src="http://stemwijzer.dvc-icta.nl/data.js"></script>
     <script type="text/javascript" src="stemwijzer.js"></script>
   </body>
